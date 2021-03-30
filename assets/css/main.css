@@ -65,7 +65,7 @@ body {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	background: var(--dark-color);
-	height: 100%;
+	max-height: 100px;
 	width: 100%;
 }
 
