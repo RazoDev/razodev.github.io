@@ -219,6 +219,12 @@ body {
 }
 /*Mobile*/
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 /*Tablet*/
 @media screen and (max-width: 1199px) and (min-width: 768px) {
 	.movlify {
@@ -283,7 +289,7 @@ body {
 		display: grid;
 		grid-template-columns: 1fr max-content 1fr;
 		background: var(--dark-color);
-		height: 100%;
+		max-height: 100px;
 		width: 100%;
 		padding: 0 24px;
 	}
