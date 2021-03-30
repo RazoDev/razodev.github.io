@@ -20,7 +20,12 @@ body {
 		box-sizing: border-box;
 	}
 
-
+#typed {
+    display: inline;
+}
+.typed-cursor {
+	display: none;
+}
 /*Mobile*/
 .hero {
 	display: grid;
@@ -48,9 +53,10 @@ body {
 	text-align: center;
 }
 
-.hero .hero--mkt span {
+.hero .hero--mkt strong {
 	border-bottom: 3px solid var(--secondary-color);
 	width: 50%;
+	padding: 16px 0;
 }
 .hero .hero--mkt p {
 	font-size: 1rem;
@@ -271,11 +277,6 @@ body {
 		padding-bottom: 16px;
 		justify-self: center;
 		text-align: center;
-	}
-
-	.hero .hero--mkt span {
-		border-bottom: 3px solid var(--secondary-color);
-		width: 50%;
 	}
 	.hero .hero--mkt p {
 		font-size: 1.8rem;
