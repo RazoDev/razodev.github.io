@@ -25,7 +25,7 @@ body {
 .hero {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 80vh 20vh;
+	grid-template-rows: 95vh 5vh;
 	place-content: center;
 	place-items: center;
 }
@@ -63,9 +63,10 @@ body {
 
 .hero .hero--nav {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr max-content;
 	background: var(--dark-color);
-	max-height: 100px;
+	max-height: 60px;
+	height: 100%;
 	width: 100%;
 }
 
@@ -254,7 +255,7 @@ body {
 	.hero {
 		display: grid;
 		grid-template-columns: 1fr;
-		grid-template-rows: 90vh 10vh;
+		grid-template-rows: 95vh 5vh;
 		place-content: center;
 		place-items: center;
 	}
@@ -289,7 +290,8 @@ body {
 		display: grid;
 		grid-template-columns: 1fr max-content 1fr;
 		background: var(--dark-color);
-		max-height: 100px;
+		height: 100%;
+		max-height: 60px;
 		width: 100%;
 		padding: 0 24px;
 	}
