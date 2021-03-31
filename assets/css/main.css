@@ -176,6 +176,15 @@ body {
 	line-height: 150%;
 }
 
+.i-am .wrapper p::before {
+	 font-family: "Font Awesome 5 Free";
+	 font-weight: 900;
+	 content: "\f0d0";
+	 font-size: 16px;
+	 position: absolute;
+	 left: -14px;
+}
+
 .movlify {
 	display: grid;
 	grid-template-columns: 1fr;
@@ -322,11 +331,15 @@ body {
 	}
 
 	.i-am .wrapper {
-		width: 70%;
+		width: 50%;
 	}
 
 	.i-am h2 {
 		font-size: 4.8rem;
+	}
+
+	.i-am .wrapper p {
+		padding: 8px 0;
 	}
 
 	.movlify {
@@ -347,6 +360,10 @@ body {
 
 	.movlify .movlify--description a {
 		padding: 12px 100px;
+	}
+
+	.movlify .movlify--project_screens img {
+		width: 80%;
 	}
 }
 /*Desktop*/
