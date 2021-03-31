@@ -170,19 +170,14 @@ body {
 }
 
 .i-am p {
-	font-size: 1.6rem;
+	font-size: 1.2rem;
 	color: var(--primary-color);
 	margin: 0;
 	line-height: 150%;
 }
 
 .i-am .wrapper p::before {
-	 font-family: "Font Awesome 5 Free";
-	 font-weight: 900;
-	 content: "\f0d0";
-	 font-size: 16px;
-	 position: absolute;
-	 left: -14px;
+	 display: none;
 }
 
 .movlify {
@@ -271,6 +266,23 @@ body {
 
 	.i-am .wrapper {
 		width: 70%;
+	}
+
+	.i-am p {
+		font-size: 1.6rem;
+		color: var(--primary-color);
+		margin: 0;
+		line-height: 150%;
+	}
+
+	.i-am .wrapper p::before {
+		display: block;
+		 font-family: "Font Awesome 5 Free";
+		 font-weight: 900;
+		 content: "\f0d0";
+		 font-size: 16px;
+		 position: absolute;
+		 left: -14px;
 	}
 }
 /*Tablet*/
