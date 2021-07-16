@@ -4,7 +4,7 @@
 	--grey-headers: #233B47;
 	--secondary-color: #FFAD47;
 	--dark-color: #16161D;
-	--accent-color: #23CE6B;
+	--accent-color: #1C2C4E;
 }
 
 body {
@@ -39,11 +39,12 @@ body {
 	display: grid;
 	place-items: center;
 	place-content: center;
+	padding-bottom: 16px;
 }
 
 .hero .hero--mkt img {
 	width: 100%;
-	max-width: 230px;
+	max-width: 700px;
 }
 
 .hero .hero--mkt h1 {
@@ -62,13 +63,18 @@ body {
 	width: 50%;
 	padding: 16px 0;
 }
+
 .hero .hero--mkt p {
-	font-size: 1rem;
+	font-size: 1.4rem;
 	max-width: 750px;
 	text-align: center;
 	line-height: 150%;
 	margin: 0;
 	padding: 16px;
+}
+
+.hero .hero--mkt span {
+	font-size: 1.2rem;
 }
 
 .hero .hero--nav {
@@ -187,8 +193,9 @@ body {
 }
 
 .movlify .movlify--description {
-	place-self: center;
+	place-self: center end;
 	padding: 16px;
+	max-width: 80%;
 }
 
 .movlify .movlify--description img {
@@ -197,15 +204,15 @@ body {
 }
 
 .movlify .movlify--description h5 {
-	font-size: 1.8rem;
+	font-size: 1.5rem;
 	color: var(--dark-color);
-	font-weight: 700;
+	font-weight: 500;
 	margin: 0;
 	padding: 12px 0;
 }
 
 .movlify .movlify--description p {
-	font-size: 1.6rem;
+	font-size: 1.2rem;
 	color: var(--dark-color);
 	font-weight: 400;
 	margin: 0;
@@ -214,23 +221,29 @@ body {
 }
 
 .movlify .movlify--project_screens {
-	background: url(../img/background-map.png);
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	align-items: start;
 }
 
 .movlify .movlify--project_screens img {
-	width: 100%;
+	max-width: 80%;
 }
 
 .movlify .movlify--description a {
 	padding: 12px 32px;
 	text-decoration: none;
+	border: 1px solid var(--accent-color);
+	color: var(--accent-color);
+	font-weight: 500;
+	font-size: 1.2rem;
+	border-radius: .2rem;
+	transition: all .4s;
+}
+
+.movlify .movlify--description a:hover {
+	border: 1px solid var(--accent-color);
 	background: var(--accent-color);
 	color: var(--primary-color);
-	font-weight: 500;
-	font-size: 1.6rem;
 }
 /*Mobile*/
 
@@ -284,6 +297,10 @@ body {
 		 position: absolute;
 		 left: -14px;
 	}
+	.movlify .movlify--project_screens {
+		display: flex;
+		align-items: center;
+	}
 }
 /*Tablet*/
 
@@ -313,11 +330,16 @@ body {
 		grid-template-rows: 93vh 7vh;
 	}
 	.hero .hero--mkt h1 {
-		font-size: 4.8rem;
+		font-size: 3.8rem;
 		padding-bottom: 16px;
+		font-weight: 500;
 	}
 	.hero .hero--mkt p {
 		font-size: 1.8rem;
+	}
+
+	.hero .hero--mkt span {
+		font-size: 1.4rem;
 	}
 
 	.hero .hero--nav {
@@ -360,22 +382,19 @@ body {
 
 	.movlify .movlify--description {
 		padding: 0 40px;
+		max-width: 600px;
 	}
 
 	.movlify .movlify--description h5 {
-		font-size: 2.4rem;
-	}
-
-	.movlify .movlify--description p {
 		font-size: 1.8rem;
 	}
 
-	.movlify .movlify--description a {
-		padding: 12px 100px;
+	.movlify .movlify--description p {
+		font-size: 1.4rem;
 	}
 
 	.movlify .movlify--project_screens img {
-		width: 80%;
+		width: 60%;
 	}
 }
 /*Desktop*/
